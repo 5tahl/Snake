@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rajdhani', sans-serif;
+}
+main {
+	height: 100vh;
+	display: flex;
+ 	align-items: center;
+	justify-content: center;
+	background-color: rgb(65, 65, 65);
+
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(25, 1fr);
+	grid-template-rows: repeat(25, 1fr);
+	height: 85vh;
+	width: 85vh;
+	background-color: rgb(142, 253, 171);
+	border: 5px solid black;
+}
+
+.time-container {
+	display: flex;
+ 	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	top: 5px;
+}
+
+.btn {
+	grid-column: 11 / 16;
+	grid-row: 11 / 16;
+	border-radius: 10px;
+	border: 1px solid black;
+	outline:none;
+	font-size: 30px;
+	color: white;
+}
+.btn:hover {
+	transform: scale(1.05);
+}
+.btn:active {
+	background-color: rgb(39, 158, 255);
+}
+
+.snakePart {
+	background-color: rgb(1, 65, 20);
+	border-radius: 8px;
+}
+.snakeFood {
+	background-color: rgb(87, 59, 0);
+	border-radius: 8px;
+}
+
+.time {
+	border-radius: 10px;
+	font-size: 50px;
+	color: white;
+}
+
+.loserScreen {
+	grid-column: 1 / 26;
+	grid-row: 1 / 27;
+	z-index: 10;
+	background-color: rgb(27, 27, 27);
+	display: flex;
+ 	align-items: center;
+	justify-content: center;
+	border: 3px solid black;
+}
+.loserScore {
+	font-size: 70px;
+	color: white;
+}
+
+.hide {
+	display: none;
+}
